@@ -1,5 +1,5 @@
 import connection from './connection';
-import { ILogin, Login } from './ILogin';
+import { ILogin, Login } from './interfaces/ILogin';
 
 const loginModel = async ({ username, password }: Login): Promise<ILogin> => {
   const [result] = await connection.execute(
