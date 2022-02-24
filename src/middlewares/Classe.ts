@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { IUser } from '../models/IUser';
+import { IUser } from '../models/interfaces/IUser';
 
 const classeExist = (
   req: Request,
