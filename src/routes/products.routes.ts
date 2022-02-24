@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import productController from '../controller/products';
+import { createProduct, getAllProduct } from '../controller/products';
 import { nameExist, IsNameTypeString, IsNameLengthCorrect } from '../middlewares/Name';
 import { amountExist, IsAmountTypeString, IsAmountLengthCorrect } from '../middlewares/Amount';
 
@@ -14,7 +14,12 @@ productRoutes.post(
   amountExist,
   IsAmountTypeString,
   IsAmountLengthCorrect,
-  productController,
+  createProduct,
+);
+
+productRoutes.get(
+  '/', 
+  getAllProduct,
 );
 
 export default productRoutes;
