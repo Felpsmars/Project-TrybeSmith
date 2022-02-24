@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { Login } from '../models/ILogin';
+import { Login } from '../models/interfaces/ILogin';
 
 import models from '../models/Login';
 

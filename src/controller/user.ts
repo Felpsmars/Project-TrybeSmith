@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { User } from '../models/IUser';
+import { User } from '../models/interfaces/IUser';
 
 import createUser from '../services/user';
 
